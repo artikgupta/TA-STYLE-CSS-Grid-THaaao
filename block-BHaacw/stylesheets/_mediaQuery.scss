@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-section {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+
+  .grid-container {
+    display: block;
+  }
+
+  .image img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .main-section {
+    margin-top: -0.16rem;
+  }
+}
