@@ -1,0 +1,60 @@
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .span-2 {
+    grid-column: span 1;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  .mobile-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input:checked ~ nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+
+  ul.flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .bars {
+    display: inline-block;
+    z-index: 1000;
+  }
+
+  #toggle:checked ~ .bars .fa-bars:before {
+    content: "\f00d";
+    position: absolute;
+    top: 3rem;
+    right: 2.5rem;
+    z-index: 999;
+    font-size: 2rem;
+    color: black;
+  }
+}
