@@ -1,0 +1,302 @@
+header {
+  position: absolute;
+  width: 100%;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  li {
+    margin-left: 1.2rem;
+    a {
+      color: rgb(104, 101, 101);
+    }
+    .active {
+      color: #fc683e;
+    }
+  }
+  .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.home-container {
+  background-color: #f5e3d7;
+
+  .home-text {
+    padding: 0 2rem;
+
+    h5 {
+      font-size: 1rem;
+      color: #d1c2b9;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #535251;
+      margin: 1rem 0;
+    }
+
+    strong {
+      font-size: 2.5rem;
+      color: black;
+    }
+    .btn {
+      border: 2.3px solid black;
+      padding: 0.54rem 1rem;
+      color: black;
+      border-radius: 50px;
+      margin: 5rem 0;
+    }
+  }
+}
+
+.about {
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  span {
+    color: #ecaf4e;
+    margin-bottom: 1rem;
+  }
+}
+
+.skill-section {
+  .skills {
+    margin-top: 1rem;
+  }
+  background-color: #fc683e;
+  progress::-webkit-progress-bar {
+    background-color: #eeeeee;
+  }
+
+  progress::-webkit-progress-value {
+    background-color: black !important;
+  }
+  progress {
+    height: 5px;
+    width: 100%;
+    background-color: black !important;
+  }
+}
+
+.all-skills {
+  text-align: center;
+  p {
+    line-height: 2;
+    font-size: 1.09rem;
+    color: white;
+  }
+  i {
+    font-size: 3rem;
+    color: white;
+  }
+  a {
+    display: block;
+    text-align: center;
+  }
+  .Interface {
+    background-color: #ecaf4e;
+  }
+  .Media {
+    background-color: #fc683e;
+  }
+  .Mobile {
+    background-color: black;
+    color: white;
+  }
+  .Coding {
+    i {
+      color: black;
+    }
+    .heading {
+      color: black;
+    }
+    p {
+      color: black;
+    }
+  }
+}
+
+.experiences {
+  background-color: #fc683e;
+
+  .p-left {
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  h3 {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+  p {
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    margin: 2rem 0 2rem 1rem;
+  }
+  i {
+    color: white;
+    font-size: 2rem;
+  }
+  span {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+  }
+}
+
+.education {
+  .p-left {
+    margin-left: 0;
+  }
+  background-color: #ecaf4e;
+  h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  h3 {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+  p {
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    // margin-left: 1rem;
+    margin: 2rem 0 2rem 1rem;
+  }
+  i {
+    color: white;
+    font-size: 2rem;
+  }
+  span {
+    color: #886d1e;
+    font-weight: bold;
+    font-size: 17px;
+  }
+}
+
+form {
+  background-color: #fc683e;
+  color: white;
+  h3 {
+    font-size: 4rem;
+  }
+
+  p {
+    color: white;
+    margin: 2rem 0;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+    padding: 10px 2rem;
+    width: 50%;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+  }
+}
+
+input {
+  width: 80%;
+  display: block;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #e3ad56;
+  background: none;
+  padding: 1rem 0;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 1.03rem;
+}
+
+textarea {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #e3ad56;
+  background: none;
+  height: 180px;
+  width: 80%;
+  padding: 1rem 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.contact-box {
+  background-color: black;
+  color: white;
+  h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 1.3rem 0;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #878787;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  a {
+    margin-right: 1rem;
+  }
+  i {
+    color: #878787;
+  }
+  .phone {
+    margin: 10px 0;
+    span {
+      color: #878787;
+    }
+  }
+}
+
+.message {
+  margin: 1rem 0;
+  span {
+    color: #886d1e;
+  }
+}
+
+.globe {
+  margin: 1rem 0;
+  span {
+    color: #886d1e;
+  }
+}
+
+.map {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fc683e;
+}
+
+iframe {
+  margin: 0 auto;
+  width: 70%;
+  height: 350px;
+}
+
+footer {
+  text-align: center;
+}
+.footer-icons {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}

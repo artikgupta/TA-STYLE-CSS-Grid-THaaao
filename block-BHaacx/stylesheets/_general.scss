@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.paddind-4 {
+  padding: 4rem;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.font-0 {
+  font-size: 0;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.span-2 {
+  grid-column: span 2;
+}
+
+.center {
+  justify-content: center;
+  align-self: center;
+}
+
+.active {
+  color: #edb868;
+}
+
+.heading {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.para {
+  color: #ada7a4;
+  line-height: 1.2;
+  margin: 2rem 0;
+}
+#toggle,
+.bars {
+  display: none;
+}
