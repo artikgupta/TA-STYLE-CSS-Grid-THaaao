@@ -1,6 +1,10 @@
-* {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -104,6 +108,11 @@ h6 {
   margin: 2rem 0;
 }
 
+#toggle,
+.bars {
+  display: none;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -117,7 +126,6 @@ header {
 
 .header li {
   margin-left: 1.2rem;
-  font-weight: bold;
 }
 
 .header li a {
@@ -594,5 +602,71 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  nav {
+    display: none;
+  }
+  .grid-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .span-2 {
+    grid-column: span 1;
+  }
+  header {
+    padding: 2rem;
+  }
+  .mobile-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input:checked ~ nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+  ul.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .bars {
+    display: inline-block;
+    z-index: 1000;
+  }
+  #toggle:checked ~ .bars .fa-bars:before {
+    content: "\f00d";
+    position: absolute;
+    top: 3rem;
+    right: 2.5rem;
+    z-index: 999;
+    font-size: 2rem;
+    color: black;
+  }
 }
 /*# sourceMappingURL=style.css.map */
